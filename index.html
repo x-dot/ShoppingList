@@ -1,19 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shared Shopping List</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Εβδομαδιαίο Διατροφικό Πλάνο</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4a261;
+            color: white;
+        }
+        td {
+            vertical-align: top;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Shared Shopping List</h1>
-    <p>Add items you need to buy:</p>
-    <input type="text" id="itemInput" placeholder="Enter item...">
-    <button onclick="addItem()">Add to List</button>
-    <ul id="shoppingList"></ul>
-  </div>
-  <script src="script.js"></script>
+
+    <h2>Εβδομαδιαίο Διατροφικό Πλάνο</h2>
+
+    <table>
+        <tr>
+            <th>Ημέρα</th>
+            <th>Πρωινό</th>
+            <th>Μεσημεριανό</th>
+            <th>Βραδινό</th>
+            <th>Σνακ</th>
+        </tr>
+        <tr>
+            <td>Δευτέρα</td>
+            <td>Γιαούρτι με βρώμη & κανέλα</td>
+            <td>Φακές με ρύζι & σαλάτα</td>
+            <td>Ομελέτα με πιπεριές & σαλάτα</td>
+            <td>1 φρούτο</td>
+        </tr>
+        <tr>
+            <td>Τρίτη</td>
+            <td>2 βραστά αυγά με ψωμί ολικής</td>
+            <td>Κοτόπουλο με πατάτες φούρνου</td>
+            <td>Τόνος με αγγούρι & ψωμί ολικής</td>
+            <td>1 χούφτα ξηροί καρποί</td>
+        </tr>
+        <tr>
+            <td>Τετάρτη</td>
+            <td>Γιαούρτι με μέλι & ξηρούς καρπούς</td>
+            <td>Μοσχάρι κοκκινιστό με ρύζι</td>
+            <td>Ομελέτα με μανιτάρια & σαλάτα</td>
+            <td>1 φρούτο</td>
+        </tr>
+        <tr>
+            <td>Πέμπτη</td>
+            <td>Scrambled eggs με πιπεριές & ντομάτα</td>
+            <td>Μακαρόνια ολικής με κόκκινη σάλτσα</td>
+            <td>Σαλάτα με τόνο & παξιμάδι</td>
+            <td>Γιαούρτι 2%</td>
+        </tr>
+        <tr>
+            <td>Παρασκευή</td>
+            <td>Γιαούρτι με βρώμη & μπανάνα</td>
+            <td>Φασόλια γίγαντες με σαλάτα</td>
+            <td>Σπιτικό σάντουιτς με αυγό & λαχανικά</td>
+            <td>1 φρούτο</td>
+        </tr>
+        <tr>
+            <td>Σάββατο</td>
+            <td>2 βραστά αυγά με ψωμί ολικής</td>
+            <td>Κοτόπουλο με ρύζι & σαλάτα</td>
+            <td>Σαλάτα με φασόλια & παξιμάδι</td>
+            <td>1 χούφτα ξηροί καρποί</td>
+        </tr>
+        <tr>
+            <td>Κυριακή</td>
+            <td>Γιαούρτι με μέλι & κανέλα</td>
+            <td>Λαδερά (μπριάμ) με ψωμί</td>
+            <td>Ομελέτα με τυρί & σαλάτα</td>
+            <td>1 φρούτο</td>
+        </tr>
+    </table>
+
 </body>
 </html>
